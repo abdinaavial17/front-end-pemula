@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: green;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .container-form {
+    border-radius: 8px;
+    margin: 20px;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    width: 75%;
+    flex-grow: 1;
+    height: fit-content;
+    border: 5px green solid;
+}
+
+.container-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    padding: 20px 20px 0 20px;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-check {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+input[type=text], input[type=number]{
+    background: #F5F1FF;
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.btn-submit {
+    border-radius: 5px;
+    padding: 5px;
+    border: 3px solid green;
+    color: black;
+    margin-top: 15px;
+    align-self: center;
+}
+
+.btn-submit:hover {
+    color: white;
+    background-color: green;
+    transition: .2s ease-in-out;
+}
+
+.search-book {
+    padding: 20px;
+    border: 5px green solid;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 20px;
+    width: 75%;
+}
+
+.search-button {
+    border-radius: 5px;
+    padding: 5px;
+    border: 3px solid green;
+    color: black;
+    margin-top: 15px;
+    align-self: center;
+}
+
+.search-button:hover {
+    color: white;
+    background-color: green;
+    transition: .2s ease-in-out;
+}
+
+.unread {
+    padding: 20px;
+    border: 5px green solid;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 20px;
+    width: 75%;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px 12px 24px;
+}
+
+.item > .inner h2 {
+    margin-bottom: 10px;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgb(245, 245, 245), 0 15px 40px rgb(245, 245, 245);
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+    background: url('assets/check-circle.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('assets/check-circle-fill.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+    background: url('assets/trash.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+    background: url('assets/undo.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+.doneread {
+    padding: 20px;
+    width: 75%;
+    background-color: rgb(245, 245, 245);
+    border: 5px green solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container .container-form, .unread, .doneread {
+        width: 100%;
+    }
+}
